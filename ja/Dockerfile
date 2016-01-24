@@ -1,0 +1,20 @@
+# Dockerfile
+
+FROM alpine:3.3
+MAINTAINER @pottava
+
+LABEL com.github.pottava.application="slack-invite" \
+      com.github.pottava.usage="docker run -d -p 80:80 -e SLACK_TEAM_NAME=xxx -e SLACK_TEAM_DOMAIN=yyy -e SLACK_TOKEN=zzz pottava/slack-invite" \
+      com.github.pottava.license="MIT"
+
+ENV LANGUAGE=ja
+
+RUN apk --no-cache add --virtual build-dependencies go git \
+      && mkdir -p /go/src /go/bin \
+      && chmod -R 777 /go \
+      && go get -u github.com/pottava/slack-invite \
+      && apk del --purge build-dependencies
+
+EXPOSE 80
+
+ENTRYPOINT ["/go/bin/slack-invite"]
