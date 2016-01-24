@@ -7,7 +7,7 @@ LABEL com.github.pottava.application="slack-invite" \
       com.github.pottava.usage="docker run -d -p 80:80 -e SLACK_TEAM_NAME=xxx -e SLACK_TEAM_DOMAIN=yyy -e SLACK_TOKEN=zzz pottava/slack-invite" \
       com.github.pottava.license="MIT"
 
-ENV LANGUAGE=en
+ENV GOPATH=/go PATH=/go/bin:$PATH LANGUAGE=en
 
 RUN apk --no-cache add --virtual build-dependencies go git \
       && mkdir -p /go/src /go/bin \
