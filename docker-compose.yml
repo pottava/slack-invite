@@ -1,0 +1,13 @@
+web:
+  build: .
+  entrypoint: go run /go/src/github.com/pottava/slack-invite/main.go
+  ports:
+    - 80:80
+  volumes:
+    - ".:/go/src/github.com/pottava/slack-invite"
+  environment:
+    - SLACK_TEAM_NAME
+    - SLACK_TEAM_DOMAIN
+    - SLACK_TOKEN
+    - LANGUAGE
+  container_name: web
