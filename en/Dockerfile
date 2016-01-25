@@ -4,7 +4,7 @@ FROM alpine:3.3
 MAINTAINER @pottava
 
 LABEL com.github.pottava.application="slack-invite" \
-      com.github.pottava.usage="docker run -d -p 80:80 -e SLACK_TEAM_NAME=xxx -e SLACK_TEAM_DOMAIN=yyy -e SLACK_TOKEN=zzz pottava/slack-invite" \
+      com.github.pottava.usage="docker run -d -p 80:80 -e SLACK_TEAM_NAME -e SLACK_TEAM_DOMAIN -e SLACK_TOKEN pottava/slack-invite" \
       com.github.pottava.license="MIT"
 
 ENV GOPATH=/go PATH=/go/bin:$PATH LANGUAGE=en
