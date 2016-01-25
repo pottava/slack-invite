@@ -30,12 +30,12 @@ export SLACK_TOKEN=?
 
 ### 3. Run the application
 
-docker run -d -p 80:80 -e SLACK_TEAM_NAME -e SLACK_TEAM_DOMAIN -e SLACK_TOKEN pottava/slack-invite
+`docker run -d -p 80:80 -e SLACK_TEAM_NAME -e SLACK_TEAM_DOMAIN -e SLACK_TOKEN pottava/slack-invite`
 
 ### Notes
 
-* Docker is very light-weight!（[5MB](https://hub.docker.com/r/pottava/slack-invite/tags/)）
-* Slack API token would not be exposed.
+* This docker image is very light-weight!（[5MB](https://hub.docker.com/r/pottava/slack-invite/tags/)）
+* The Slack API token would not be exposed to users.
 
 
 ## Copyright and license
