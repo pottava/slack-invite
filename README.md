@@ -15,9 +15,9 @@ You can let team member candidates to send a invitation by themselves.
 
 ## Usage
 
-### 1. Generate Slack API token
+### 1. Generate a Slack API token
 
-You can create a API token at [Slack Web API](https://api.slack.com/web).
+You can create an API token at [Slack Web API](https://api.slack.com/web).
 
 ### 2. Set environmental variables
 
