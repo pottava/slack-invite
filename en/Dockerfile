@@ -13,7 +13,8 @@ RUN apk --no-cache add --virtual build-dependencies go git \
       && mkdir -p /go/src /go/bin \
       && chmod -R 777 /go \
       && go get -u github.com/pottava/slack-invite \
-      && apk del --purge build-dependencies
+      && apk del --purge build-dependencies \
+      && rm -rf /go/pkg /go/src
 
 EXPOSE 80
 
