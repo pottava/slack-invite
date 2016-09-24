@@ -1,2 +1,2 @@
-FROM pottava/golang:1.5
+FROM pottava/golang:1.7
 RUN go get -u github.com/asaskevich/govalidator

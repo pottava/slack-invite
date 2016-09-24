@@ -1,5 +1,11 @@
 # Slack automated invitation
 ---
+[![](https://badge.imagelayers.io/pottava/slack-invite:latest.svg)](https://imagelayers.io/?images=pottava/slack-invite:latest 'Get your own badge on imagelayers.io')
+
+Supported tags and respective `Dockerfile` links:  
+・latest ([en/Dockerfile](https://github.com/pottava/slack-invite/blob/master/en/Dockerfile))  
+・en ([en/Dockerfile](https://github.com/pottava/slack-invite/blob/master/en/Dockerfile))  
+・ja ([en/Dockerfile](https://github.com/pottava/slack-invite/blob/master/ja/Dockerfile))
 
 ## Description
 
